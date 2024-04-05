@@ -1,7 +1,7 @@
 export default {
   BLOG: {
     ALL: {
-      URL: "https://intervue-dev.io/strapi/api/blogs",
+      URL: `${process.env.NEXT_PUBLIC_STRAPI_URL}/blogs`,
     },
   },
 };
