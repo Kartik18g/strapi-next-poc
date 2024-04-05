@@ -9,6 +9,7 @@ export default async function Home() {
       <h1>Home Page</h1>
       {response.data.map((blog: any) => (
         <BlogItem
+          key={blog.id}
           id={blog.id}
           title={blog.attributes.title}
           description={blog.attributes.description}
