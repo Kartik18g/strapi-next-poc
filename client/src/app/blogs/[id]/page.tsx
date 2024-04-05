@@ -9,9 +9,11 @@ export async function generateStaticParams() {
 
   return response.data.map((blog: any) => ({
     id: blog.id + "",
+    title: "sf",
   }));
 }
 
-export default function page({}: Props) {
+export default function page(props: Props) {
+  console.log(props, "df");
   return <div>page</div>;
 }
